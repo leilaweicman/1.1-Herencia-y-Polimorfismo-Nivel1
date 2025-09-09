@@ -1,9 +1,25 @@
 package cars;
 
 public class Car {
-    public static final String BRAND = "Toyota"; // constante, común a todos
-    public static String model; // compartido, pero modificable
-    public final int horsePower; // propio de cada coche, fijo
+    private static final String BRAND = "Toyota";
+    private static String model;
+    private final int horsePower;
+
+    public static String getBRAND() {
+        return BRAND;
+    }
+
+    public static String getModel() {
+        return model;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public static void setModel(String model) {
+        Car.model = model;
+    }
 
     public Car(int horsePower) {
         this.horsePower = horsePower;
