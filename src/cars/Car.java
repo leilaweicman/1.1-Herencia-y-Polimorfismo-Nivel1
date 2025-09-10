@@ -5,7 +5,7 @@ public class Car {
     private static String model;
     private final int horsePower;
 
-    public static String getBRAND() {
+    public static String getBrand() {
         return BRAND;
     }
 
